@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Tasty Bites Recipes</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+        header{
+            background: #ff7f50;
+            color:white;
+            text-align: center;
+            padding: 20px;
+        }
+        /*Navigation*/
+        nav{
+            background: #333;
+            padding:15px;
+            text-align: center;
+        }
+        nav a{
+            color:white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover{
+            color:#ff7f50;
+        }
+        /*Main Content*/
+        main{
+            width:90%;
+            margin: 30px auto;
+        }
+        main h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipes{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card{
+            width:300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        
+        }
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit: cover;
+        }
+        .card h3{
+            margin:15px 0;
+        }
+        .card p{
+            padding: 0 15px 15px;
+        }
+        .card a{
+            display:inline-block;
+            background: #ff7f50
+            padding:10px 20px;
+            margin-bottom:20px;
+            border-radius:5px;
+            color:white;
+            text-decoration:none;
+        }
+        .card a:hover{
+            background: #e5673d;
+        }
+        footer{
+            background: #333;
+            color:white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tasty Bites Recipes</h1>
+        <p>Simple, Delicious & Homemade Recipes</p>
+    </header>
+
+    <nav>
+        <a href="recipe homepage.html">Home</a>
+        <a href="recipe 1.html">Beef Pilau Recipe</a>
+        <a href="recipe 2.html">Chapati Recipe</a>
+    </nav>
+
+    <main>
+        <h2>Featured Recipes</h2>
+        <div class="recipes">
+        <div class="card">
+            <img src="beefpilau.jpeg">
+            <h3>Beef Pilau</h3>
+            <p>A delicious Kenyan rice dish cooked with beef and aromatic spices.</p>
+            <a href="recipe1.html">View Recipe</a>
+        </div>
+        <div class="card">
+            <img src="chapati.jpeg">
+            <h3>Chapati</h3>
+            <p>Soft, layered flatbread that pairs perfectly with stews and vegetables.</p>
+            <a href="recipe 2.html">View Recipe</a>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2026 Tasty Bites Recipes.All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
